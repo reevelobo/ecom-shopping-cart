@@ -21,14 +21,14 @@ jobs:
         node-version: '20.x'
     
     - name: Create React App
-      run: npx create-react-app App/
+      run: npx create-react-app eshop-app/
 
     - name: Update File Structure
       run: |
-        rm -rf App/public 
-        rm -rf App/src
-        rm -rf App/package.json
-        cp react-frontend/* App/
+        rm -rf eshop-app/public 
+        rm -rf eshop-app/src
+        rm -rf eshop-app/package.json
+        cp react-frontend/* eshop-app/
 
     - name: Install Dependencies
       run: |
