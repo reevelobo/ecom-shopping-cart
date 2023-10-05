@@ -18,8 +18,10 @@ jobs:
     - name: Install Node JS
       run: |
         sudo apt update
-        sudo apt install npm -y
-        sudo npm -g install create-react-app -y
+        sudo apt upgrade -y
+        sudo apt install -y curl
+        curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+        sudo apt install -y nodejs
       
     
     - name: Create React App
