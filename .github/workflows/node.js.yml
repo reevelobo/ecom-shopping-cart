@@ -18,11 +18,13 @@ jobs:
     - name: Install Node JS
       run: |
         sudo apt update
-        sudo apt install nodejs
         sudo apt install npm
+        sudo apt install nodejs
+        sudo npm -g install create-react-app
+      
     
     - name: Create React App
-      run: npx create-react-app App/
+      run: create-react-app App/
 
     - name: Update File Structure
       run: |
