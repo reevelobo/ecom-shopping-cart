@@ -36,6 +36,7 @@ jobs:
       run: |
         npm install redux
         npm install ui
+        npm install babel-preset-react-app --save-dev
 
     - name: Build & Start React App
       working-directory:  ./eshop-app
