@@ -28,7 +28,7 @@ jobs:
         rm -rf eshop-app/public 
         rm -rf eshop-app/src
         rm -rf eshop-app/package.json
-        cp react-frontend/* eshop-app/
+        cp ../react-frontend/* eshop-app/
 
     - name: Install Dependencies
       run: |
