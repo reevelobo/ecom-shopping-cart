@@ -40,6 +40,4 @@ jobs:
 
     - name: Build & Start React App
       working-directory:  ./eshop-app
-      run: |
-       npm run build
-       npm start
+      run: npm start
