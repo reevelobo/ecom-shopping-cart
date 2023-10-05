@@ -32,9 +32,13 @@ jobs:
         cp -R react-frontend/* eshop-app/
 
     - name: Install Dependencies
+      working-directory:  ./eshop-app
       run: |
         npm install redux
         npm install ui
 
-    - name: Build
-      run: npm start
+    - name: Build & Start React App
+      working-directory:  ./eshop-app
+      run: |
+       npm run build
+       npm start
