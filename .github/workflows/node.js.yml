@@ -37,4 +37,4 @@ jobs:
         npm install ui
 
     - name: Build
-      run: npm run build
+      run: npm start
